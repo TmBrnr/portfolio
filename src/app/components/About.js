@@ -28,10 +28,10 @@ export default function About() {
                 I am and what I bring to the table:
               </p>
               <Link href="/contact">
-                <p className="text-main-red font-medium items-center text-xl font-mono flex flex-row gap-2 text">
+                <p className="text-main-red font-medium items-center text-xl font-mono flex flex-row gap-2 text crt-glow-text">
                   work with me
                   <span className="-rotate-45 hover:rotate-0 transition-all">
-                    <Arrow />
+                    <Arrow color={'#fff'} />
                   </span>
                 </p>
               </Link>

@@ -4,6 +4,8 @@ import Image from "next/image";
 
 import bottom from "../../../public/bottom.svg";
 
+import { Arrow } from "../icons/Icons";
+
 export default function Bottom() {
   const [height, setHeight] = useState("0px");
   const semiCircleRef = useRef(null);
@@ -55,12 +57,15 @@ export default function Bottom() {
     <div className="sticky bottom-0 z-0 " style={{visibility: hidden ? "hidden" : "visible"}}>
       <div className="h-screen flex flex-col justify-between w-full ">
         <div
-          className="semi-circle relative rotate-180"
+          className="flex semi-circle relative rotate-180 justify-center items-center"
           style={{ height: height }}
           ref={semiCircleRef}
         >
           <div className="absolute bottom-0 w-full rotate-180">
               <Image alt="Interested" src={bottom} className="w-full" style={{ transform: `scale(${scale})`}} />
+          </div>
+          <div className="rotate-90 gap-2 flex flex-row ">
+            <div className="rotate-45 hover:rotate-90 transition-all"><Arrow color={'#2700C5'}/></div>
           </div>
         </div>
       </div>

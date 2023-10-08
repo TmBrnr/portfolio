@@ -53,7 +53,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="sticky top-0 z-0 "
+    <div className="sticky top-0 z-0 overflow-hidden "
     style={{visibility: hidden ? "hidden" : "visible"}}
     >
       <div className="h-screen flex flex-col justify-between w-full ">

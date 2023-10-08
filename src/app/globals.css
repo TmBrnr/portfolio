@@ -208,3 +208,12 @@ body {
   backdrop-filter: blur(0.5px);  
 }
 
+.crt-glow-text {
+  transition: text-shadow 0.1s ease; /* Adjust the duration as needed */
+}
+
+
+.crt-glow-text:hover {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 1), 
+              0 0 10px rgba(255, 255, 255, 1);
+}
