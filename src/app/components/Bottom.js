@@ -4,6 +4,8 @@ import Image from "next/image";
 
 import bottom from "../../../public/bottom.svg";
 
+import Footer from "./Footer";
+
 import { Arrow } from "../icons/Icons";
 
 export default function Bottom() {
@@ -64,10 +66,11 @@ export default function Bottom() {
           <div className="absolute bottom-0 w-full rotate-180">
               <Image alt="Interested" src={bottom} className="w-full" style={{ transform: `scale(${scale})`}} />
           </div>
-          <div className="rotate-90 gap-2 flex flex-row ">
-            <div className="rotate-45 hover:rotate-90 transition-all"><Arrow color={'#2700C5'}/></div>
+          <div className="rotate-90 gap-2 flex flex-col ">
+            <div className="rotate-45 hover:rotate-90 transition-all"><Arrow color={'#2700C5'} size={100}/></div><div className="rotate-45 hover:rotate-90 transition-all"><Arrow color={'#2700C5'} size={100}/></div><div className="rotate-45 hover:rotate-90 transition-all"><Arrow color={'#2700C5'} size={100}/></div>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );

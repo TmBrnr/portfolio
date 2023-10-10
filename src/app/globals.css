@@ -208,6 +208,10 @@ body {
   backdrop-filter: blur(0.5px);  
 }
 
+p {
+  animation: textShadow 1.6s infinite;
+}
+
 .crt-glow-text {
   transition: text-shadow 0.1s ease; /* Adjust the duration as needed */
 }

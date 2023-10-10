@@ -7,7 +7,7 @@ import {Arrow} from "../icons/Icons";
 export default function Navbar() {
   return (
     <>
-      <div className="flex flex-row justify-between items-center px-5 py-5  ">
+      <div className="flex flex-row justify-between items-center px-5 py-5" >
         <div className="flex items-center justify-between w-full">
           <div className="flex flex-row gap-5">
             <Link href="/about">
