@@ -6,8 +6,8 @@ import logo from "../../../public/logo.svg";
 export default function Navbar() {
   return (
     <>
-      <div className="flex flex-col justify-center items-center px-5 py-5  pb-10">
-        <div className="flex flex-row items-center justify-center gap-10 w-full mb-10">
+      <div className="flex flex-col justify-center lg:items-center px-5 py-5 pb-10 ">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center gap-10 w-full mb-10">
           <Link href="/datenschutz">
             <p className="text-main-red font-mono  textShadow crt-glow-text">
               datenschutz
